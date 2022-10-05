@@ -453,6 +453,7 @@ type(s)
 
 
 
+<<<<<<< HEAD
 
 # Unordered collections of unique elements
 # A set automatically remove all the duplicate values.
@@ -466,3 +467,6 @@ s[0]
 # Traceback (most recent call last):
 #   File "<stdin>", line 1, in <module>
 # TypeError: 'set' object does not support indexing
+=======
+# Unordered collections of unique elements
+>>>>>>> feature
