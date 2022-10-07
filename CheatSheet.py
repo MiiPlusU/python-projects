@@ -454,3 +454,24 @@ type(s)
 
 
 # Unordered collections of unique elements
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Angela Notes
+# Extend function is the same as +=
+# Extend list by appending elements from the iterable
+# Append vs extend does the same thing
+# extend adds multiple elements list.extend((4,5))
+# append adds 1 element list.append(1)
