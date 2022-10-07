@@ -472,18 +472,6 @@ s[0]
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 # Angela Notes
 # Extend function is the same as +=
 # Extend list by appending elements from the iterable
