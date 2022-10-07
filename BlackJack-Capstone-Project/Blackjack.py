@@ -13,15 +13,15 @@ for index in range(len(player_deck)):
 dealer_deck=random.sample(main_deck,2)
 dealer_score=0
 
+random_num=(random.choice(main_deck))
+
 # Dealer Total Score
-for index in range(len(dealer_deck)):
-    dealer_score+=dealer_deck[index]
+dealer_deck.append(random_num)
+dealer_score=sum(dealer_deck)
 
 # Question
 decision = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ").lower()
 
-
-random_num=(random.choice(main_deck))
 
 
 if player_score>21 and 11 in player_deck:
@@ -60,46 +60,57 @@ else:
             print("invalid input")
         else:
             while another_card != 'n':
+                
+                # if player_score < 21:
                 player_deck.append(random_num)
-                for index in range(len(player_deck)):
-                    player_score+=player_deck[index]
+                    # player_score=sum(player_deck)
+
+                player_score=0
+                for card in player_deck:
+                    player_score+=card
+                    
+
+                # else:
+                #    continue
+                    
                 if player_score>21 and 11 in player_deck:
                     for i in range(len(player_deck)):
                         if player_deck[i]==11:
                             player_deck[i]==1
                             break
+
                 if player_score > dealer_score and player_score <=21 and dealer_score<21:
-                    print("You were closer, you win!")
                     print(f"Your final hand: {player_deck}, final score: {player_score}")
                     print(f"Computer's final hand: {dealer_deck}, final score: {dealer_score}")
+                    print("You were closer, you win!")
                     break
                 elif dealer_score > player_score and dealer_score <=21 and player_score<21:
-                    print("Dealer was closer, you lose!")
                     print(f"Your final hand: {player_deck}, final score: {player_score}")
                     print(f"Computer's final hand: {dealer_deck}, final score: {dealer_score}")
+                    print("Dealer was closer, you lose!")
                     break
                 elif player_score > 21 and dealer_score > 21:
-                    print("Draw, you both busted")
                     print(f"Your final hand: {player_deck}, final score: {player_score}")
                     print(f"Computer's final hand: {dealer_deck}, final score: {dealer_score}")
+                    print("Draw, you both busted")
                     break
                 elif player_score <= 21 and dealer_score > 21:
-                    print("Dealer busted, you win")
                     print(f"Your final hand: {player_deck}, final score: {player_score}")
                     print(f"Computer's final hand: {dealer_deck}, final score: {dealer_score}")
+                    print("Dealer busted, you win")
                     break
                 elif player_score == dealer_score:
-                    print("You both tied")
                     print(f"Your final hand: {player_deck}, final score: {player_score}")
                     print(f"Computer's final hand: {dealer_deck}, final score: {dealer_score}")
+                    print("You both tied")
                     break
                 else:
-                    print("You busted, you lose")
                     print(f"Your final hand: {player_deck}, final score: {player_score}")
                     print(f"Computer's final hand: {dealer_deck}, final score: {dealer_score}")
+                    print("You busted, you lose")
                     break
 
-
+        
         decision = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ").lower()
         if decision !='n' and decision !='y':
             print("invalid input")
@@ -108,6 +119,8 @@ else:
         elif decision=='y':
             player_deck=random.sample(main_deck,2)
             dealer_deck=random.sample(main_deck,2)
+            player_score=0
+            dealer_score=0
             for index in range(len(player_deck)):
                 player_score+=player_deck[index]
             for index in range(len(dealer_deck)):
@@ -115,9 +128,4 @@ else:
             continue
         else:
             break
-
-
-
-
-
 
