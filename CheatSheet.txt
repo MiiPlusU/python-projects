@@ -489,3 +489,5 @@ s[0]
 
 #THE NUMBER GUESSING GAME
 random.randint(1,10) prints out random num in range, with max and min included
+from random import randint allows you to use randint(1,10) without random.randint()
+import random you have to use both
