@@ -469,6 +469,9 @@ s[0]
 # Unordered collections of unique elements
 >>>>>>> feature
 
+#split: string.split('') turns a string into a list
+#join: ''.join() a list together
+
 
 
 
@@ -478,3 +481,11 @@ s[0]
 # Append vs extend does the same thing
 # extend adds multiple elements list.extend((4,5))
 # append adds 1 element list.append(1)
+
+
+
+
+
+
+#THE NUMBER GUESSING GAME
+random.randint(1,10) prints out random num in range, with max and min included
