@@ -20,8 +20,6 @@ def check_choice():
     return is_choice_difficult
     
 
-            
-
 play_game()
 
 
