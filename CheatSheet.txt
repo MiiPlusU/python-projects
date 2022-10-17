@@ -393,7 +393,8 @@ wife.clear()
 wife
 # {}
 
-
+import os
+os.system('cls) clears screen
 
 
 # Checking keys in a Dictionary
@@ -489,3 +490,18 @@ s[0]
 
 #THE NUMBER GUESSING GAME
 random.randint(1,10) prints out random num in range, with max and min included
+from random import randint allows you to use randint(1,10) without random.randint()
+import random you have to use both
+cars.sort(), list.sort(reverse=True|False, key=myFunc)
+cars = ['Ford', 'BMW', 'Volvo']
+
+cars.sort() sorted(iterable, key=key, reverse=reverse)
+== outputs true or false
+Breakpoint tells the computer to stop at a particular line while its running
+type(local_variable)
+
+#RANDOM MODULE
+randrange(0, 101, 2) # Even integer from 0 to 100 inclusive
+choice(['win', 'lose', 'draw']) # Single random element from a sequence
+shuffle(deck) # Shuffle a list
+sample([10, 20, 30, 40, 50], k=4) # Four samples without replacement
