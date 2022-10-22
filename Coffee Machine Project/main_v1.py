@@ -1,3 +1,5 @@
+from os import sys
+
 MENU = {
     "expresso": {
         "ingredients": {
@@ -82,15 +84,15 @@ def check_payment(payment, option):
     if option == "expresso" and payment >= MENU["expresso"]["cost"]:
         balance = payment - MENU["expresso"]["cost"]
         print(f"Here is your ${balance} in change.")
-        print("Here is your expresso. Enjoy!")
+        print("Here is your expresso ☕. Enjoy!")
     elif option == "latte" and payment >= MENU["latte"]["cost"]:
         balance = payment - MENU["latte"]["cost"]
         print(f"Here is your ${balance} in change.")
-        print("Here is your latte. Enjoy!")
+        print("Here is your latte ☕. Enjoy!")
     elif option == "cappuccino" and payment >= MENU["cappuccino"]["cost"]:
         balance = payment - MENU["cappuccino"]["cost"]
         print(f"Here is your ${balance} in change.")
-        print("Here is your cappuccino. Enjoy!")
+        print("Here is your cappuccino ☕. Enjoy!")
     else:
         print("Not enough money")
 
@@ -119,9 +121,12 @@ while option in drinks:
     if option=="report":
       report()
 
-    if option not in drinks and option!="report":
+    if option not in drinks and option!="report" and option!="off":
         print("Invalid option")
         break
+
+    if option=="off":
+        sys.exit()
 
     if check_resources(option, total_water, total_coffee, total_milk) == True:
       if option=="expresso":

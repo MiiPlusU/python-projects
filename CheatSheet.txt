@@ -505,3 +505,10 @@ randrange(0, 101, 2) # Even integer from 0 to 100 inclusive
 choice(['win', 'lose', 'draw']) # Single random element from a sequence
 shuffle(deck) # Shuffle a list
 sample([10, 20, 30, 40, 50], k=4) # Four samples without replacement
+
+pressing ctl key + r runs code, its the shortcut
+#TODO 1: creates to do list in pyspark
+alt + ctrl + up/down add cursors
+alt + mouse add cursors
+
+round function rounds to the number of decimal places round(variable - variable2, 2)
