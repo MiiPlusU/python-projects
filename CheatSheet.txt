@@ -512,3 +512,64 @@ alt + ctrl + up/down add cursors
 alt + mouse add cursors
 
 round function rounds to the number of decimal places round(variable - variable2, 2)
+
+hi_My_Name_Is this is camelCase
+CarCamshaftPulley is PascalCase
+snake_case_is_this snake_Case
+
+__init__ special function to initialize the attributes
+attributes are just variables associated with object
+self is the parameter which is the actual object being initialized/created
+class Car:
+    def __init__(self, user_id, username):
+        self.if = user_id
+        self.username = username
+        self.followers = 0
+        self.following = 0
+
+    def follow(self, user):
+        user.followers+=1
+        self.following+=1
+
+
+
+
+user_1 = User("003", "angela")
+
+print(user_1.username)
+
+my_car = Car(5)
+my_car.seats=5 is the same
+convention is name of parameter is the same as the name of attribute
+
+print(user_1.followers)
+outputs 0 as a default value
+all objects will default to 0
+
+
+reading and writing to files
+#read only is the mode by default
+with open(file) as file:
+contents = file.read()
+with write, set mode="w"
+file.write("text")
+mode = "a" means append
+if you try to open a file in write and that file doesn't exit, it'll create it
+../report.doc grabs file from previous path
+python doesn't care about / or \ you can use / for all
+root is mac hd and windows its c drive
+absolute path is always relative to root
+
+striplines() strips lines by newline
+strip("dgasgher") strips lines by whatever is in the strip
+readline() reads line by line
+''.join() turns list into string
+The split(',') method splits a string into a list.
+splitlines() lines by linebreaks
+The readlines() method returns a list containing each line in the file as a list item.
+strips by spaces
+data = pandas.read_csv("weather_data.csv")
+print(data["temp"])
+two primary data structures of pandas, series (1d) and dataframe (2d)
+single column is a series
+whole table is a df
