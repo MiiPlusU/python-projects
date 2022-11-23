@@ -545,3 +545,31 @@ convention is name of parameter is the same as the name of attribute
 print(user_1.followers)
 outputs 0 as a default value
 all objects will default to 0
+
+
+reading and writing to files
+#read only is the mode by default
+with open(file) as file:
+contents = file.read()
+with write, set mode="w"
+file.write("text")
+mode = "a" means append
+if you try to open a file in write and that file doesn't exit, it'll create it
+../report.doc grabs file from previous path
+python doesn't care about / or \ you can use / for all
+root is mac hd and windows its c drive
+absolute path is always relative to root
+
+striplines() strips lines by newline
+strip("dgasgher") strips lines by whatever is in the strip
+readline() reads line by line
+''.join() turns list into string
+The split(',') method splits a string into a list.
+splitlines() lines by linebreaks
+The readlines() method returns a list containing each line in the file as a list item.
+strips by spaces
+data = pandas.read_csv("weather_data.csv")
+print(data["temp"])
+two primary data structures of pandas, series (1d) and dataframe (2d)
+single column is a series
+whole table is a df
