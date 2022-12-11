@@ -573,3 +573,5 @@ print(data["temp"])
 two primary data structures of pandas, series (1d) and dataframe (2d)
 single column is a series
 whole table is a df
+
+Not all apis have parameters
