@@ -575,3 +575,22 @@ single column is a series
 whole table is a df
 
 Not all apis have parameters
+
+import moduls
+basic import
+keyword and module name
+import turtle
+tim = turtle.Turtle()
+keword module name keyword thing in module
+from turtle import Turtle
+tim = Turtle()
+tom = Turtle()
+from turtl import *
+aliasing modules
+keyword module keyword alias name
+import turtle as t
+tim = t.Turtle()
+some modules cannot be imported
+turtle is packaged with the Python standard library, some modules are not
+tuple elements cannot be changed
+Use case, elements you dont want change is where you'd use a tuple, ie a website color

@@ -7,7 +7,7 @@ import smtplib
 MY_LAT = 33.162689
 MY_LONG = -96.937622
 MY_EMAIL = "Ishmaelsesay2@gmail.com"
-MY_PASSWORD = "GreatValue77"
+MY_PASSWORD = ""
 
 
 def is_above():
