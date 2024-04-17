@@ -45,15 +45,17 @@ data = pandas.DataFrame(data_dict)
 data.to_csv("new_data.csv")
 '''
 
-data = pandas.read_csv("2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
-data_gray_count = len(data[data["Primary Fur Color"]== "Gray"])
-data_red_count = len(data[data["Primary Fur Color"]== "Cinnamon"])
-data_black_count = len(data[data["Primary Fur Color"]== "Black"])
+
+data = pandas.read_csv("C:/Users/sesay/OneDrive/Desktop/Python-Projects/Mini Projects/The Great Squirrel Census Data Analysis (with Pandas)/2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
+
+black_count = len(data[data["Primary Fur Color"] == "Black"])
+red_count = len(data[data["Primary Fur Color"] == "Cinnamon"])
+gray_count = len(data[data["Primary Fur Color"] == "Gray"])
+
 my_dict = {
-    "Fur": [0,1,2],
-    "Color":["grey","red","black"],
-    "Count":[data_gray_count,data_red_count,data_black_count]
+    "Fur Color" : ["Black","Red","Gray"],
+    "count" : [black_count,red_count,gray_count]
 }
 
 df = pandas.DataFrame(my_dict)
-df.to_csv("squirrel.count.csv")
+df.to_csv("Squirrel_Count.csv")
