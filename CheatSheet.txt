@@ -594,3 +594,10 @@ some modules cannot be imported
 turtle is packaged with the Python standard library, some modules are not
 tuple elements cannot be changed
 Use case, elements you dont want change is where you'd use a tuple, ie a website color
+
+
+Day 19
+High order function is a function that can work with other functions ie passing a function in a function\
+keyword arguments are func(hey=2) positional args are func(1,2,3)
+seperate instances of same object
+same attributes doing different things is different states
