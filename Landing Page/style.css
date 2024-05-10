@@ -1,0 +1,152 @@
+
+
+/* Ensures that the HTML and body take full height and width */
+html, body {
+    width: 100%;
+    height: 100%; /* Ensure body takes at least 100% of the viewport height */
+    font-family: Arial, sans-serif; /* example font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjust this value as needed */
+    min-height: 100vh; /* Use 100vh to ensure the body takes up at least the full height of the viewport */
+    align-items: center;
+    /* margin: 0 50px; */
+}
+
+.header-links {
+    display: flex;
+    gap: 20px;
+}
+
+.header-link {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    background-color: #1f2937;
+    padding: 20px 0;
+}
+
+.header-half {
+    display: flex;
+    flex-flow: column;
+    padding: 0 50px;
+}
+
+.header-links {
+    margin-bottom: 30px;
+    color: #cccccc78;
+    font-size: 12px;
+}
+
+.header-logo {
+    margin-bottom: 85px;
+    font-weight: bold;
+}
+
+.quote-section{
+    background-color: #e5e7eb;
+}
+
+.header {
+    display: flex;
+    flex:1;
+    width: 100%;
+    justify-content: center;
+}
+
+.random-info-section,.quote-section,.footer {
+    display: flex;
+    flex:1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-placeholder {
+    width: 400px;  /* Set the width of the square */
+    height: 150px; /*Set the height of the square */
+    background-color: #cccccc78; /* Light gray background */
+    display: flex; /* Use flexbox for easy centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center; /* Ensure text is centered if it wraps */
+    font-size: 16px; /* Optional: Adjust the font size as needed */
+    margin: 20px; /* Optional: Add some space around the square */
+}
+.image-placeholder, .text, .header-logo {
+    color: white;
+}
+
+
+button {
+    background-color: aqua;
+}
+
+.awesome-text {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.review-section {
+    margin-right: 0px;
+}
+
+.random-info-section {
+    display: flex;
+    flex-flow: column;
+}
+.image-infos {
+    display: flex;
+    margin: 0 200px;
+}
+
+.the-quote {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subtitle-1 {
+    margin-bottom: 20px;  /* Space between the subtitle and the squares */
+    font-size: 20px;  /* Adjust font size as desired */
+}
+
+.square {
+    width: 100px;  /* Set the width of the square */
+    height: 100px;  /* Set the height of the square */
+    border: 3px solid blue;  /* Set the border color and thickness */
+    background-color: white;  /* Set the background color */
+    margin-bottom: 10px;  /* Optional: space between the square and the text */
+}
+
+.inner-footer {
+    width: 700px;
+    height: 120px;
+    background-color: rgb(41, 148, 248);  /* Set the background color */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.copyright-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;  /* Set the width of the square */
+    height: 50px; /*Set the height of the square */
+    text-align: center;
+    background-color: #1f2937;
+}
+
