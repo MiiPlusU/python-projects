@@ -18,4 +18,4 @@ COPY src/python-app .
 EXPOSE 8000
 
 # Command to run your Python application
-CMD ["python", "app.py"]
+CMD ["python", "main.py"]
